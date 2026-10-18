@@ -7,7 +7,7 @@ jobs:
     steps:
       - run: git config --global user.name "Github Actions"
       - run: git config --global user.email "actions@github.com"
-      - run: git clone https://github.com/Nxo25565/github-action-test.git
+      - run: git clone https://github.com/Nxo25565/github-action-test.git ./github-action-test
       - run: cd ./github-action-test
       - run: ls
       - run: npm install
