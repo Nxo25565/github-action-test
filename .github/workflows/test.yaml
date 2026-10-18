@@ -9,7 +9,13 @@ jobs:
         uses: actions/checkout@v6
       - run: ls
 
-      - name: build
+      - name: install pkg
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm install
-          npm run build
+
+      - name: build
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run build
