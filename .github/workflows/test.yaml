@@ -8,7 +8,8 @@ jobs:
       - name: Repo setup
         uses: actions/checkout@v6
       - run: ls
-      
+
       - name: build
-      - run: npm install
-      - run: npm run build
+      - run: |
+          npm install
+          npm run build
