@@ -5,8 +5,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      # - run: echo "1. checkout"
-      # - run: git checkout dist
+      - run: echo "1. clone"
+      - run: git clone https://github.com/Nxo25565/github-action-test.git
 
-      - run: echo "2. build"
+      - run: echo "2. install & build"
       - run: npm install && npm run build
